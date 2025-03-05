@@ -1,40 +1,41 @@
-# #### Lista de Exercicios para fazer
-# #### Inteiros (`int`)
 
-# 1. Escreva um programa que soma dois números inteiros inseridos pelo usuário.
-# 2. Crie um programa que receba um número do usuário e calcule o resto da divisão desse número por 5.
-# 3. Desenvolva um programa que multiplique dois números fornecidos pelo usuário e mostre o resultado.
-# 4. Faça um programa que peça dois números inteiros e imprima a divisão inteira do primeiro pelo segundo.
-# 5. Escreva um programa que calcule o quadrado de um número fornecido pelo usuário.
+# Python Bootcamp - Aula 2
 
-# #### Números de Ponto Flutuante (`float`)
+Este repositório contém exercícios básicos de Python desenvolvidos durante a segunda aula do bootcamp.
 
-# 6. Escreva um programa que receba dois números flutuantes e realize sua adição.
-# 7. Crie um programa que calcule a média de dois números flutuantes fornecidos pelo usuário.
-# 8. Desenvolva um programa que calcule a potência de um número (base e expoente fornecidos pelo usuário).
-# 9. Faça um programa que converta a temperatura de Celsius para Fahrenheit.
-# 10. Escreva um programa que calcule a área de um círculo, recebendo o raio como entrada.
+## Pré-requisitos
 
-# #### Strings (`str`)
+- Python 3.x instalado
+- UV (Python package installer and resolver)
+- Git
 
-# 11. Escreva um programa que receba uma string do usuário e a converta para maiúsculas.
-# 12. Crie um programa que receba o nome completo do usuário e imprima o nome com todas as letras minúsculas.
-# 13. Desenvolva um programa que peça ao usuário para inserir uma frase e, em seguida, imprima esta frase sem espaços em branco no início e no final.
-# 14. Faça um programa que peça ao usuário para digitar uma data no formato "dd/mm/aaaa" e, em seguida, imprima o dia, o mês e o ano separadamente.
-# 15. Escreva um programa que concatene duas strings fornecidas pelo usuário.
+## Como executar o projeto
 
-# #### Booleanos (`bool`)
+1. Clone o repositório:
+```bash
+git clone https://github.com/flozer/python_bootcamp_aula2.git
+cd python_bootcamp_aula2/
+```
 
-# 16. Escreva um programa que avalie duas expressões booleanas inseridas pelo usuário e retorne o resultado da operação AND entre elas.
-# 17. Crie um programa que receba dois valores booleanos do usuário e retorne o resultado da operação OR.
-# 18. Desenvolva um programa que peça ao usuário para inserir um valor booleano e, em seguida, inverta esse valor.
-# 19. Faça um programa que compare se dois números fornecidos pelo usuário são iguais.
-# 20. Escreva um programa que verifique se dois números fornecidos pelo usuário são diferentes.
+2. Instale o UV no seu computador:
 
-# #### try-except e if
+[Instalação do UV](https://docs.astral.sh/uv/guides/install-python/)
 
-# 21: Conversor de Temperatura
-# 22: Verificador de Palíndromo
-# 23: Calculadora Simples
-# 24: Classificador de Números
-# 25: Conversão de Tipo com Validação
+3. Após a instalação, execute os passos necessários no repositório para executar o script. (Se precisar de ajuda pode entrar em contato! 😁)
+
+## Funcionalidades
+
+O programa oferece 6 opções:
+
+1. Programa 1: Soma dois números inteiros fornecidos pelo usuário
+2. Programa 2: Calcula o resto da divisão de um número por 5
+3. Programa 3: Multiplica dois números fornecidos pelo usuário
+4. Programa 4: Realiza a divisão inteira entre dois números
+5. Programa 5: Calcula o quadrado de um número fornecido
+6. Programa 6: Sair do programa
+
+## Como usar
+
+1. Execute o programa seguindo as instruções acima
+2. Escolha uma opção
+3. Siga as instruções apresentadas na tela para cada programa
