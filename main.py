@@ -2,17 +2,23 @@ def main():
     #Menu
     while True:
         print("\nMenu:")
-        print("1 - Soma (inteiros) ")
-        print("2 - Resto da Divisão ")
-        print("3 - Multiplicação ")
-        print("4 - Divisão Inteira ")
-        print("5 - Quadrado ")
-        print("6 - Soma (flutuantes) ")
-        print("7 - Sair... \n")
+        print("1 - Soma (inteiros)")
+        print("2 - Resto da Divisão")
+        print("3 - Multiplicação")
+        print("4 - Divisão Inteira")
+        print("5 - Quadrado")
+        print("6 - Soma (flutuantes)")
+        print("7 - Média de números flutuantes")
+        print("8 - Cálculo de Potência")
+        print("9 - Conversor Celsius para Fahrenheit")
+        print("10 - Cálculo da área do círculo")
+        print("11 - Converter texto para maiúsculas")
+        print("12 - Exibir primeiro nome em maiúsculas")
+        print("13 - Sair...\n")
 
         #Solicita a escolha do usuário
         try:
-            opcaoEscolhida = int(input("Escolha uma opção(1-6)\n"))
+            opcaoEscolhida = int(input("Escolha uma opção(1-12)\n"))
             if opcaoEscolhida == 1:
                 ex1()
             if opcaoEscolhida == 2:
@@ -26,11 +32,23 @@ def main():
             if opcaoEscolhida == 6:
                 ex6()
             if opcaoEscolhida == 7:
+                ex7()
+            if opcaoEscolhida == 8:
+                ex8()
+            if opcaoEscolhida == 9:
+                ex9()
+            if opcaoEscolhida == 10:
+                ex10()
+            if opcaoEscolhida == 11:
+                ex11()
+            if opcaoEscolhida == 12:
+                ex12()
+            if opcaoEscolhida == 13:
                 print("Saindo...")
                 break
         except ValueError:
             print("Opção Inválida")
-
+            
 def ex1():
     #Escreva um programa que soma dois números inteiros inseridos pelo usuário.
     #A fazer: tratar possíveis erros (Feito 04/03/2025)
@@ -172,4 +190,4 @@ def ex12():
     print(f"O primeiro nome é: {nome}")
 
 if __name__ == "__main__":
-    ex12()
+    main()
