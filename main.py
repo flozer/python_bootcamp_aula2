@@ -2,12 +2,13 @@ def main():
     #Menu
     while True:
         print("\nMenu:")
-        print("1 - Soma ")
+        print("1 - Soma (inteiros) ")
         print("2 - Resto da Divisão ")
         print("3 - Multiplicação ")
         print("4 - Divisão Inteira ")
         print("5 - Quadrado ")
-        print("6 - Sair... \n")
+        print("6 - Soma (flutuantes) ")
+        print("7 - Sair... \n")
 
         #Solicita a escolha do usuário
         try:
@@ -23,6 +24,8 @@ def main():
             if opcaoEscolhida == 5:
                 ex5()
             if opcaoEscolhida == 6:
+                ex6()
+            if opcaoEscolhida == 7:
                 print("Saindo...")
                 break
         except ValueError:
@@ -89,5 +92,84 @@ def ex5():
         exit()
     print(f"O quadrado de {numeroDigitado} é {numeroDigitado ** 2}.")
 
+def ex6():
+    #Escreva um programa que receba dois números flutuantes e realize a sua adição.
+    try:
+        primeiroNumero = float(input("Digite o primeiro numero (deve ser do tipo FLOAT): "))
+    except ValueError:
+        print("Digite um número FLOAT válido")
+        exit()
+    try:
+        segundoNumero = float(input("Digite o segundo numero  (deve ser do tipo FLOAT): "))
+    except ValueError:
+        print("Digite um número FLOAT válido")
+        exit()
+    print(f" A soma dos dois números é {primeiroNumero + segundoNumero}")   
+
+def ex7():
+    #Crie um programa que calcule a média de dois números flutuantes fornecidos pelo usuário.
+    try:
+        primeiroNumero = float(input("Digite o primeiro numero (deve ser do tipo FLOAT): "))
+    except ValueError:
+        print("Digite um número FLOAT válido")
+        exit()
+    try:
+        segundoNumero = float(input("Digite o segundo numero  (deve ser do tipo FLOAT): "))
+    except ValueError:
+        print("Digite um número FLOAT válido")
+        exit()
+    print(f" A média dos dois números é {(primeiroNumero + segundoNumero) / 2}")   
+
+def ex8():
+    #Desenvolva um programa que calcule a potência de um número (base e expoente fornecidos pelo usuário).
+    try:
+        numeroBase = float(input("Digite a Base: "))
+    except ValueError:
+        print("Digite um número válido")
+        exit()
+    try:
+        numeroExpoente = float(input("Digite o expoente: "))
+    except ValueError:
+        print("Digite um número válido")
+        exit()
+    print(f" A potência da base informada é {numeroBase ** numeroExpoente}") 
+
+def ex9():
+    #Faça um programa que converta a temperatura de Celsius para Fahrenheit.
+    try:
+        numeroTemperatura = float(input("Digite os graus °C: "))
+    except ValueError:
+        print("Digite um valor válido")
+        exit()
+    numeroFahrenheit = (numeroTemperatura * 9/5) + 32
+    print(f" A temperatura em Fahrenheit é {numeroFahrenheit}")
+
+def ex10():
+    #Escreva um programa que calcule a área de um círculo, recebendo o raio como entrada
+    try:
+        valorRaio = float(input("Digite o valor do raio: "))
+    except ValueError:
+        print("Digite um valor válido")
+        exit()
+    areaCirculo = 3.14 * (valorRaio ** 2)
+    print(f" A área do círculo é {areaCirculo}")
+
+def ex11():
+    #Escreva um programa que receba uma string do usuário e a converta para maiúsculas.
+    try:
+        inputString = str(input("Digite uma string para ser colocada em maiúscula: "))
+    except ValueError:
+        print("Digite uma string válida")
+    inputString = inputString.upper()
+    print(f"A string em maiúscula é: {inputString}")
+
+def ex12():
+    try:
+        inputString = str(input("Digite seu nome completo para ser colocada em maiúscula: "))
+    except ValueError:
+        print("Digite uma string válida")
+    nome = inputString.split()[0].upper()
+    print(f"O primeiro nome é: {nome}")
+
 if __name__ == "__main__":
-    main()
+    ex12()
